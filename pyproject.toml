@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "option-engine"
+version = "0.1.0"
+description = "European option pricing, analytical Greeks, and implied volatility"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+option-engine = "option_engine.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["option_engine*"]
